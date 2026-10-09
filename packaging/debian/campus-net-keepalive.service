@@ -1,0 +1,14 @@
+[Unit]
+Description=Campus network keepalive monitor
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/lib/campus-net-keepalive/campus_net_keepalive.py --daemon
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

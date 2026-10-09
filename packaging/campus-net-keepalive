@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/python3 /usr/lib/campus-net-keepalive/campus_net_keepalive.py "$@"

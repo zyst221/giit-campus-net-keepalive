@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=校园网自动认证
+Comment=校园网连接监测与后台认证
+Exec=/usr/bin/campus-net-keepalive
+Icon=campus-net-keepalive
+Terminal=false
+Categories=Network;
+StartupNotify=true
