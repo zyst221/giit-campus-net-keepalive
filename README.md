@@ -20,3 +20,4 @@ journalctl --user -u campus-net-keepalive.service
 ```
 
 卸载命令：`sudo apt remove campus-net-keepalive`。已保存的账号和密码位于 `~/.config/campus-net-keepalive/credentials.json`，文件权限受到限制，但内容未加密。
+
