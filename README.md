@@ -1,5 +1,14 @@
 # 校园网自动认证
 
+## 下载
+
+- [GitHub Releases](https://github.com/zyst221/giit-campus-net-keepalive/releases/latest)
+- Windows：`CampusNetKeepalive.exe`
+- Debian / Ubuntu：`campus-net-keepalive_1.0.3_all.deb`
+- 校验：下载 `SHA256SUMS` 后执行 `sha256sum -c SHA256SUMS`
+
+仓库只保留源码与打包脚本；`build/`、`dist/`、`__pycache__/` 不再提交。需要自行构建时按下面各平台步骤执行。
+
 ## Windows
 
 ### 构建
@@ -31,7 +40,7 @@ PyInstaller 不支持从 Linux 交叉构建 Windows exe，因此必须在 Window
 
 ```sh
 sh packaging/build-deb.sh
-sudo apt install ./dist/campus-net-keepalive_1.0.2_all.deb
+sudo apt install ./dist/campus-net-keepalive_1.0.3_all.deb
 ```
 
 从桌面应用菜单启动**校园网自动认证**。GNOME 顶栏中的网络图标会显示监测状态，并提供打开控制窗口、开始或停止监测以及退出等操作。关闭窗口会将程序隐藏到顶栏，用户级后台服务会继续运行。
